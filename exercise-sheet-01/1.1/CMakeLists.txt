@@ -4,7 +4,7 @@ project(exercise-1.1 VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
-add_executable(exercise-1.1 main.cpp)
+add_executable(exercise main.cpp)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
