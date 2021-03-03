@@ -55,4 +55,5 @@ int main(int, char**) {
 
     cout << endl << "Sum: " << sum << endl << "Mean: " << mean << endl << "Standard Deviation: " << sd << endl << endl;
     cout << "Largest Value: " << largest << endl << "Smallest Value: " << smallest << endl;
+    return 0;
 }
