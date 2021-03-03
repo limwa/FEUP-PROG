@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int readInteger(string prompt) {
+int read_integer(string prompt) {
     while (true) {
         int result;
 
@@ -28,7 +28,7 @@ int main(int, char**) {
     int largest = numeric_limits<int>::min();
     
     vector<int> numbers;
-    while (int number = readInteger("Please specify a number: ")) {
+    while (int number = read_integer("Please specify a number: ")) {
         numbers.push_back(number);
 
         sum += number;

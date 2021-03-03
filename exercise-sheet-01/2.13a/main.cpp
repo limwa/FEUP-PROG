@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int readInteger(string prompt) {
+int read_integer(string prompt) {
     while (true) {
         int result;
 
@@ -26,7 +26,7 @@ int main(int, char**) {
     int smallest = numeric_limits<int>::max();
     int largest = numeric_limits<int>::min(); 
 
-    int size = readInteger("Please specify how many numbers there are in the sequence: ");
+    int size = read_integer("Please specify how many numbers there are in the sequence: ");
     if (size <= 0)
         return 0;
 
@@ -34,7 +34,7 @@ int main(int, char**) {
     
     int numbers[size]; 
     for (int i = 0; i < size; i++) {
-        int number = readInteger("Please specify a number: ");
+        int number = read_integer("Please specify a number: ");
         numbers[i] = number;
 
         sum += number;

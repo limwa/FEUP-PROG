@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int readInteger(string prompt) {
+int read_integer(string prompt) {
     while (true) {
         int result;
 
@@ -35,7 +35,7 @@ int main(int, char**) {
     
     vector<int> numbers;
     while (true) {
-        int number = readInteger("Please specify a number: ");
+        int number = read_integer("Please specify a number: ");
         if (cin.eof())
             break;
 
