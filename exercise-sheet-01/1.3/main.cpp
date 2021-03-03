@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main(int, char**) {
-    float PI = 3.141592653589793;
+    const float PI = 3.141592653589793;
 
     float density, radius;
     std::cout << "Density (kg/m^3): " << std::flush;
