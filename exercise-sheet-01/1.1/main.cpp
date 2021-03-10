@@ -5,4 +5,5 @@ int main(int, char**) {
     std::cout << "Please specify a character: " << std::flush;
     std::cin >> character;
     std::cout << int(character) << std::endl;
+    return 0;
 }

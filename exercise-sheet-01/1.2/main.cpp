@@ -16,4 +16,5 @@ int main(int, char**) {
     float diff_c = c - mean;
 
     std::cout << "mean\t= " << mean << "\nA-mean\t= " << diff_a << "\nB-mean\t= " << diff_b << "\nC-mean\t= " << diff_c << std::endl;
+    return 0;
 }

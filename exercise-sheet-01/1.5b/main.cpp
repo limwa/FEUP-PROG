@@ -5,14 +5,16 @@ using namespace std;
 
 int main(int, char**) {
     int h1, m1, s1, h2, m2, s2;
+    char sep1, sep2, sep3, sep4;
 
     while (true) {
         cout << "Time1 (hours minutes seconds) ? " << flush;
-        cin >> h1 >> m1 >> s1;
+        cin >> h1 >> sep1 >> m1 >> sep2 >> s1;
 
-        if (!cin.fail())
+        bool is_valid = sep1 == sep2 && sep1 != ' ' && cin.peek() == '\n'; 
+        if (is_valid && !cin.fail())
             break;
-
+            
         cout << "Bad input! Please try again." << endl;
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -20,9 +22,10 @@ int main(int, char**) {
 
     while (true) {
         cout << "Time2 (hours minutes seconds) ? " << flush;
-        cin >> h2 >> m2 >> s2;
+        cin >> h2 >> sep3 >> m2 >> sep4 >> s2;
 
-        if (!cin.fail())
+        bool is_valid = sep3 == sep4 && sep3 != ' ' && cin.peek() == '\n';
+        if (is_valid && !cin.fail())
             break;
 
         cout << "Bad input! Please try again." << endl;

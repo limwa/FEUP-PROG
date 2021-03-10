@@ -11,4 +11,5 @@ int main(int, char**) {
 
     float mass = 4 * PI * density * (radius * radius * radius)  / 3;
     std::cout << "Mass (kg): " << mass << std::endl;
+    return 0;
 }

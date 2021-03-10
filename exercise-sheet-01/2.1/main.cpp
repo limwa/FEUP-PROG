@@ -32,8 +32,21 @@ int main(int, char**) {
 
     cout << endl;
 
-    float x = (c * e - b * f) / (a * e - b * d);
-    float y = (a * f - c * d) / (a * e - b * d);
+    float n1 = c * e - b * f;
+    float n2 = a * f - c * d;
+    float denominator = a * e - b * d;
+    
+    if (n1 == 0 && n2 == 0) {
+        cout << "System has infinitely many solutions." << endl;
+    } else {
+        if (denominator == 0) {
+            cout << "System is impossible!" << endl;
+            return 0;
+        }
+    }
+
+    float x = n1 / denominator;
+    float y = n2 / denominator;
 
     cout << "x = " << x << endl;
     cout << "y = " << y << endl;

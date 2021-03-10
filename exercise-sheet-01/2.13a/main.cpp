@@ -11,7 +11,7 @@ int read_integer(string prompt) {
         cout << prompt << flush;
         cin >> result;
 
-        if (!cin.fail())
+        if (cin.peek() == '\n' && !cin.fail())
             return result;
 
         cout << "Bad input! Please try again." << endl;
